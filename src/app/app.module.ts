@@ -9,6 +9,8 @@ import { CategoriesModule } from './categories/categories.module';
 
 import { AppComponent } from './app.component';
 import { ComponentsModule } from './components/components.module';
+import { APP_BASE_HREF } from '@angular/common';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,10 @@ import { ComponentsModule } from './components/components.module';
     ComponentsModule,
     LoginModule
   ],
-  providers: [AngularTokenModule],
+  providers: [
+    AngularTokenModule,
+    { provide: APP_BASE_HREF, useValue: environment.base_href }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
