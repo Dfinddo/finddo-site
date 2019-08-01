@@ -3,16 +3,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AngularTokenModule } from 'angular-token';
+import { HttpClientModule } from '@angular/common/http';
+import { LoginModule } from './login/login.module';
+import { CategoriesModule } from './categories/categories.module';
 
 import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http';
-import { TesteComponent } from './teste/teste.component';
-import { MatTableModule } from '@angular/material/table';
+import { ComponentsModule } from './components/components.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TesteComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +23,9 @@ import { MatTableModule } from '@angular/material/table';
       apiBase: 'http://localhost:3000',
     }),
     HttpClientModule,
-    MatTableModule
+    CategoriesModule,
+    ComponentsModule,
+    LoginModule
   ],
   providers: [AngularTokenModule],
   bootstrap: [AppComponent]
