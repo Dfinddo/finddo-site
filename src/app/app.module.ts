@@ -19,8 +19,7 @@ import { ComponentsModule } from './components/components.module';
     BrowserAnimationsModule,
     AppRoutingModule,
     AngularTokenModule.forRoot({
-      // Change to your local dev environment example: 'http://localhost:3000'
-      apiBase: 'http://localhost:3000',
+      apiBase: 'https://finddo-back-dev.herokuapp.com',
     }),
     HttpClientModule,
     CategoriesModule,
