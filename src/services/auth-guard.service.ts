@@ -12,7 +12,19 @@ export class AuthGuardService implements CanActivate, CanActivateChild {
     private router: Router
   ) { }
 
+  validateTokenAndRedirect() {
+    this.tokenService.validateToken().subscribe(
+      () => { },
+      () => {
+        if (this.tokenService.userSignedIn()) {
+          this.tokenService.signOut().subscribe();
+        }
+      }
+    );
+  }
+
   canActivate(): boolean {
+    this.validateTokenAndRedirect();
     if (this.tokenService.userSignedIn()) {
       return true;
     } else {
