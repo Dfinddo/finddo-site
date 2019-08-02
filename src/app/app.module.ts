@@ -9,6 +9,7 @@ import { CategoriesModule } from './categories/categories.module';
 
 import { AppComponent } from './app.component';
 import { ComponentsModule } from './components/components.module';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { ComponentsModule } from './components/components.module';
     BrowserAnimationsModule,
     AppRoutingModule,
     AngularTokenModule.forRoot({
-      apiBase: 'https://finddo-back-dev.herokuapp.com',
+      apiBase: environment.apiUrl,
     }),
     HttpClientModule,
     CategoriesModule,
