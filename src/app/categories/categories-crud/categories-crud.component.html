@@ -1,7 +1,6 @@
 <div class="example-container mat-elevation-z8">
   <mat-table #table [dataSource]="dataSource">
 
-    <!-- Name Column -->
     <ng-container matColumnDef="name">
       <mat-header-cell *matHeaderCellDef> Categorias </mat-header-cell>
       <mat-cell *matCellDef="let element">
@@ -10,10 +9,28 @@
       </mat-cell>
     </ng-container>
 
+    <ng-container matColumnDef="edit">
+      <mat-header-cell *matHeaderCellDef></mat-header-cell>
+      <mat-cell *matCellDef="let element"></mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="actions">
+      <mat-header-cell *matHeaderCellDef> Ações </mat-header-cell>
+      <mat-cell *matCellDef="let element">
+        <span class="mobile-label">Ações:</span>
+        <button color="black" mat-button aria-label="Editar categoria" (click)="editCategory(element)">
+          <mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
+        </button>
+        <button color="black" mat-button aria-label="Excluir categoria" (click)="deleteCategory(element)">
+          <mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon>
+        </button>
+      </mat-cell>
+    </ng-container>
+
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
     <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
   </mat-table>
-  <button color="primary" mat-fab aria-label="Example icon-button with a heart icon" (click)="createCategory()">
-    <mat-icon>add</mat-icon>
-  </button>
 </div>
+<button class="fixed-bottom" color="primary" mat-fab aria-label="Adicionar categoria" (click)="createCategory()">
+  <mat-icon>add</mat-icon>
+</button>
