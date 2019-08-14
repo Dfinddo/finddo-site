@@ -1,0 +1,45 @@
+div.example-container {
+    transform: translateY(56px);
+}
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+}
+
+button.fixed-bottom {
+    position: fixed;
+    top: 89%;
+    left: calc(100% - 5em);
+}
+
+.mat-table {
+    overflow: auto;
+}
+
+.mobile-label {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .mobile-label {
+        width: 80px;
+        display: inline-block;
+        font-weight: bold;
+    }
+
+    .mat-header-row {
+        display: none;
+    }
+
+    .mat-row {
+        flex-direction: column;
+        align-items: start;
+        padding: 8px 24px;
+    }
+
+    .mat-cell:last-of-type {
+        padding-left: 24px;
+        padding-right: 0;
+    }
+}

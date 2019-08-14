@@ -8,6 +8,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { RouterModule } from '@angular/router';
 import { LoadDialogComponent } from './load-dialog/load-dialog.component';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { LoadDialogComponent } from './load-dialog/load-dialog.component';
     MatDialogModule,
     MatProgressSpinnerModule,
     MatToolbarModule,
+    MatMenuModule,
     RouterModule
   ],
   declarations: [NavigationBarComponent, LoadDialogComponent],

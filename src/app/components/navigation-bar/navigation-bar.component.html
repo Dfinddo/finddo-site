@@ -1,5 +1,10 @@
 <mat-toolbar color="primary">
+    <button class="menu" mat-raised-button color="primary" [matMenuTriggerFor]="menu">Menu</button>
     <span>FinddoAdmin</span>
     <button class="logout" (click)="logOut()" mat-raised-button color="primary">Sair</button>
 </mat-toolbar>
 <router-outlet></router-outlet>
+<mat-menu #menu="matMenu">
+    <button routerLink="/console/categorias" mat-menu-item>Categorias</button>
+    <button routerLink="/console/subcategorias" mat-menu-item>Subcategorias</button>
+</mat-menu>

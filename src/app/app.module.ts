@@ -10,6 +10,7 @@ import { CategoriesModule } from './categories/categories.module';
 import { AppComponent } from './app.component';
 import { ComponentsModule } from './components/components.module';
 import { environment } from 'src/environments/environment';
+import { SubcategoriesModule } from './subcategories/subcategories.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { environment } from 'src/environments/environment';
     HttpClientModule,
     CategoriesModule,
     ComponentsModule,
-    LoginModule
+    LoginModule,
+    SubcategoriesModule
   ],
   providers: [AngularTokenModule],
   bootstrap: [AppComponent]
