@@ -20,7 +20,6 @@ export class NavigationBarComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.router.navigate([this.categoriesRoutes]);
   }
 
   logOut() {
