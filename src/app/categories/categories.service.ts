@@ -17,7 +17,7 @@ export class CategoriesService {
   getCategories(): Observable<Category[]> {
     return this.http.get<Category[]>(`${environment.apiUrl}/${this.categoriesPath}`)
       .pipe(
-        map(categories => categories.map((cat) => new Category(cat.id, cat.name)))
+        map(categories => categories.map((cat) => new Category(cat.id, cat.name, cat.subcategories)))
       );
   }
 }
