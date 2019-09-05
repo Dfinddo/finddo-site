@@ -1,0 +1,186 @@
+@import "../../../colors.scss";
+
+div.landing-body {
+    font-display: Basic, 'Sans-Serif';
+    height: 5800px;
+    background-color: $landing-background;
+}
+
+div.landing-header-container {
+    height: 110px;
+
+    // background-color: red; //debug
+    position: relative;
+}
+
+div.landing-navbar {
+    height: 100%;
+    position: absolute;
+    width: 200%;
+    left: -25%;
+    height: 100%;
+    background-image: url("../../../assets/header-fundo.svg");
+}
+
+div.landing-main-container {
+    height: 650px;
+    width: 110%;
+    left: -5%;
+    position: relative;
+}
+
+div.landing-thumbnail {
+    height: 100%;
+}
+
+.landing-thumbnail img {
+    width: 100%;
+    object-fit: cover;
+    height: 141%;
+}
+
+div.como-funciona {
+    transform: translateY(270px);
+    margin-top: 40px;
+
+    .centralize-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.row {
+        margin-bottom: 40px;
+    }
+
+    h3 {
+        color: $landing-titles;
+        text-align: center;
+        border-bottom-color: $landing-text-borders;
+        border-bottom-style: solid;
+        border-bottom-width: 4px;
+        display: inline-flex;
+    }
+
+    img.icone-como-funciona {
+        position: absolute;
+        z-index: 10;
+        width: 25%;
+    }
+
+    div.descricao-como-funciona {
+        position: absolute;
+        transform: translateY(260px);
+        font-size: x-large;
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+        color: $landing-titles;
+    }
+}
+
+div.servicos {
+    transform: translateY(800px);
+}
+
+.como-funciona .background-como-funciona, .servicos img {
+    display: block;
+    margin: 0 auto;
+    height: 400px;
+    position: relative;
+}
+
+div.step-number {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 23px;
+    left: 92px;
+    z-index: 10;
+    background-image: url("../../../assets/Ellipse.svg");
+
+    p {
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-size: xx-large;
+        color: $como-funciona-numbers;
+    }
+}
+
+div.vantagens {
+    height: 561px;
+    transform: translateY(360px);
+
+    div.vantagens-title {
+        position: absolute;
+        width: 100vw;
+        top: 60px;
+
+        h3 {
+            border-bottom-color: $landing-text-borders;
+            border-bottom-style: solid;
+            border-bottom-width: 4px;
+        }
+    }
+
+    div.conteudo-vantagens {
+        position: absolute;
+        width: 80%;
+        top: 150px;
+        left: 11%;
+        height: 500px;
+
+        h4 {
+            text-decoration: underline;
+            margin-bottom: 70px;
+        }
+
+        img.tela-exemplo-vantagens {
+            height: 100%;
+        }
+
+        ul.lista-vantagens-principal li {
+            font-size: larger;
+            margin-bottom: 20px;
+        }
+
+        ul.lista-vantagens-principal > li {
+            list-style-image: url('../../../assets/engrenagem-li.svg');
+        }
+    }
+
+    img.vantagens-background {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+div.lojas-parceiras {
+    transform: translateY(875px);
+    position: relative;
+    z-index: 10;
+}
+
+div.quero-trabalhar {
+    transform: translateY(705px);
+    position: relative;
+    z-index: 8;
+}
+
+div.fale-conosco {
+    transform: translate(-2px, 582px);
+}
+
+div.lojas-parceiras, div.quero-trabalhar,
+div.fale-conosco, div.como-funciona-step-img,
+div.vantagens-title {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
