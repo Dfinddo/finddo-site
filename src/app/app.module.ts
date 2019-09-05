@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { ComponentsModule } from './components/components.module';
 import { environment } from 'src/environments/environment';
 import { SubcategoriesModule } from './subcategories/subcategories.module';
+import { LandingModule } from './landing/landing.module';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { SubcategoriesModule } from './subcategories/subcategories.module';
     HttpClientModule,
     CategoriesModule,
     ComponentsModule,
+    LandingModule,
     LoginModule,
     SubcategoriesModule
   ],

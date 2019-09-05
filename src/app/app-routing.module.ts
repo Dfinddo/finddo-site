@@ -7,8 +7,10 @@ import { categoriesRoutes } from './categories/categories-routing.module';
 import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
 import { AuthGuardService } from 'src/services/auth-guard.service';
 import { subcategoriesRoutes } from './subcategories/subcategories-routing.module';
+import { landingRoutes } from './landing/landing-routing.module';
 
 const routes: Routes = [
+  ...landingRoutes,
   ...loginRoutes,
   {
     path: 'console',
