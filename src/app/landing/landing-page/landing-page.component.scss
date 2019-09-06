@@ -2,14 +2,12 @@
 
 div.landing-body {
     font-display: Basic, 'Sans-Serif';
-    height: 5800px;
+    height: 4740px;
     background-color: $landing-background;
 }
 
 div.landing-header-container {
     height: 110px;
-
-    // background-color: red; //debug
     position: relative;
 }
 
@@ -20,10 +18,11 @@ div.landing-navbar {
     left: -25%;
     height: 100%;
     background-image: url("../../../assets/header-fundo.svg");
+    z-index: 10;
 }
 
 div.landing-main-container {
-    height: 650px;
+    height: 480px;
     width: 110%;
     left: -5%;
     position: relative;
@@ -31,23 +30,23 @@ div.landing-main-container {
 
 div.landing-thumbnail {
     height: 100%;
+    transform: translateY(-54px);
 }
 
 .landing-thumbnail img {
     width: 100%;
-    object-fit: cover;
-    height: 141%;
+    height: 120%;
+}
+
+.centralize-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 div.como-funciona {
-    transform: translateY(270px);
+    transform: translateY(30px);
     margin-top: 40px;
-
-    .centralize-title {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 
     div.row {
         margin-bottom: 40px;
@@ -70,7 +69,7 @@ div.como-funciona {
 
     div.descricao-como-funciona {
         position: absolute;
-        transform: translateY(260px);
+        transform: translateY(240px);
         font-size: x-large;
         text-align: center;
         padding-left: 30px;
@@ -80,13 +79,33 @@ div.como-funciona {
 }
 
 div.servicos {
-    transform: translateY(800px);
+    transform: translateY(200px);
+
+    div.servicos-title {
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        color: $landing-titles;
+        text-align: center;
+        border-bottom-color: $landing-text-borders;
+        border-bottom-style: solid;
+        border-bottom-width: 4px;
+        display: inline-flex;
+    }
+}
+
+.como-funciona .background-como-funciona {
+    height: 350px;
+}
+
+.servicos img {
+    height: 265px;
 }
 
 .como-funciona .background-como-funciona, .servicos img {
     display: block;
     margin: 0 auto;
-    height: 400px;
     position: relative;
 }
 
@@ -113,12 +132,12 @@ div.step-number {
 
 div.vantagens {
     height: 561px;
-    transform: translateY(360px);
+    transform: translateY(120px);
 
     div.vantagens-title {
         position: absolute;
         width: 100vw;
-        top: 60px;
+        top: 30px;
 
         h3 {
             border-bottom-color: $landing-text-borders;
@@ -130,17 +149,17 @@ div.vantagens {
     div.conteudo-vantagens {
         position: absolute;
         width: 80%;
-        top: 150px;
+        top: 100px;
         left: 11%;
         height: 500px;
 
         h4 {
             text-decoration: underline;
-            margin-bottom: 70px;
+            margin-bottom: 27px;
         }
 
         img.tela-exemplo-vantagens {
-            height: 100%;
+            height: 73%;
         }
 
         ul.lista-vantagens-principal li {
@@ -149,7 +168,7 @@ div.vantagens {
         }
 
         ul.lista-vantagens-principal > li {
-            list-style-image: url('../../../assets/engrenagem-li.svg');
+            list-style-image: url("../../../assets/engrenagem-li.svg");
         }
     }
 
@@ -161,19 +180,170 @@ div.vantagens {
 }
 
 div.lojas-parceiras {
-    transform: translateY(875px);
+    transform: translateY(260px);
     position: relative;
     z-index: 10;
 }
 
 div.quero-trabalhar {
-    transform: translateY(705px);
+    transform: translateY(90px);
     position: relative;
     z-index: 8;
 }
 
+div.quero-trabalhar-conteudo {
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    color: $landing-titles;
+
+    div.quero-trabalhar-title {
+        position: relative;
+        width: 100%;
+        margin-top: 40px;
+
+        h3 {
+            border-bottom-color: $landing-text-borders;
+            border-bottom-style: solid;
+            border-bottom-width: 4px;
+            margin: 0 auto;
+            display: block;
+            width: max-content;
+        }
+    }
+
+    div.quero-trabalhar-thumb {
+        margin-top: 90px;
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+    div.form-quero-trabalhar {
+        margin-top: 20px;
+        background-color: $landing-background;
+        height: 80px;
+        border-radius: 44px;
+        align-items: center;
+
+        input, a {
+            width: 100%;
+            border-radius: 23px;
+            border: transparent;
+            height: 45px;
+            font-size: larger;
+        }
+
+        input {
+            padding-left: 10px;
+        }
+
+        a {
+            text-align: center;
+            display: block;
+            background-color: $como-funciona-numbers;
+            line-height: 42px;
+            color: $landing-titles;
+        }
+
+        a:visited, a:hover, a:active {
+            text-decoration: none;
+        }
+
+        a:hover {
+            opacity: 0.5;
+            transition: 1s;
+        }
+    }
+}
+
 div.fale-conosco {
-    transform: translate(-2px, 582px);
+    transform: translate(-2px, -33px);
+}
+
+div.fale-conosco-conteudo {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 140px;
+
+    div.fale-conosco-titulo {
+        position: relative;
+        margin-bottom: 40px;
+
+        h3 {
+            border-bottom-color: $landing-text-borders;
+            border-bottom-style: solid;
+            border-bottom-width: 4px;
+            display: block;
+            margin: 0 auto;
+            width: fit-content;
+            color: $landing-titles;
+        }
+    }
+
+    input {
+        height: 45px;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    input, textarea {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 80%;
+        border-radius: 23px;
+        border: transparent;
+        font-size: larger;
+    }
+
+    textarea {
+        display: block;
+        margin: 0 auto;
+    }
+
+    div.alinhar-direita {
+        input {
+            display: block;
+            margin-left: auto;
+        }
+    }
+
+    div.alinhar-esquerda {
+        input {
+            display: block;
+            margin-right: auto;
+        }
+    }
+
+    a {
+        display: block;
+        margin: 0 auto;
+        width: 215px;
+        height: 45px;
+        color: $landing-titles;
+        background-color: $landing-text-borders;
+        text-align: center;
+        border-radius: 23px;
+        line-height: 43px;
+    }
+
+    a:visited, a:hover, a:active {
+        text-decoration: none;
+    }
+
+    a:hover {
+        opacity: 0.5;
+        transition: 1s;
+    }
 }
 
 div.lojas-parceiras, div.quero-trabalhar,
@@ -183,4 +353,88 @@ div.vantagens-title {
     align-items: center;
     justify-content: center;
     display: flex;
+}
+
+div.lojas-parceiras {
+    align-items: flex-start;
+}
+
+div.lojas-parceiras-content {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+
+    div.row {
+        margin-top: 60px;
+    }
+}
+
+div.lojas-parceiras-title {
+    position: relative;
+    margin-top: 35px;
+    display: flex;
+
+    h3 {
+        border-bottom-color: $landing-text-borders;
+        border-bottom-style: solid;
+        border-bottom-width: 4px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+div.parceiro-logo {
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    span:after {
+        content: '“';
+        font-size: 152px;
+        color: $abre-aspas;
+        position: absolute;
+        top: 115px;
+    }
+
+    p {
+        position: relative;
+        width: 250px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+div.duvidas {
+    transform: translateY(-10px);
+    font-size: 23px;
+    color: $landing-titles;
+
+    div.texto-duvidas p, div.esquerda p, div.direita p {
+        width: fit-content;
+        display: block;
+    }
+
+    div.texto-duvidas p {
+        margin: 0 auto;
+    }
+
+    div.esquerda p {
+        margin-right: auto;
+    }
+
+    div.direita p {
+        margin-left: auto;
+    }
+
+    div.direita p:before {
+        content: url('../../../assets/envelope.svg');
+        margin-right: 10px;
+    }
+
+    div.esquerda p:before {
+        content: url('../../../assets/whatsapp.svg');
+        margin-right: 10px;
+    }
 }
