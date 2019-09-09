@@ -210,7 +210,7 @@ div.vantagens {
     div.conteudo-vantagens {
         position: absolute;
         width: 80%;
-        top: 100px;
+        top: 25%;
         left: 11%;
         height: 500px;
 
@@ -254,7 +254,7 @@ div.quero-trabalhar {
 
 div.quero-trabalhar-conteudo {
     position: absolute;
-    width: 80%;
+    width: 1120px;
     height: 60%;
     color: $landing-titles;
 
@@ -330,7 +330,7 @@ div.fale-conosco {
 
 div.fale-conosco-conteudo {
     position: absolute;
-    width: 80%;
+    width: 1200px;
     height: 80%;
     top: 140px;
 
@@ -422,7 +422,7 @@ div.lojas-parceiras {
 
 div.lojas-parceiras-content {
     position: absolute;
-    width: 80%;
+    width: 1130px;
     height: 100%;
 
     div.row {
@@ -497,5 +497,25 @@ div.duvidas {
     div.esquerda p:before {
         content: url("../../../assets/whatsapp.svg");
         margin-right: 10px;
+    }
+}
+
+@media (min-width: 1768px) {
+    div.landing-body {
+        height: 4870px;
+    }
+
+    div.vantagens {
+        height: 750px;
+    }
+}
+
+@media (min-width: 1948px) {
+    div.landing-body {
+        height: 4921px;
+    }
+
+    div.vantagens {
+        height: 800px;
     }
 }
