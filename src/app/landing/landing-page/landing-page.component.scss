@@ -9,6 +9,51 @@ div.landing-body {
 div.landing-header-container {
     height: 110px;
     position: relative;
+
+    img {
+        position: absolute;
+        z-index: 50;
+        margin-top: 16px;
+        margin-left: 16px;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        position: absolute;
+        z-index: 50;
+        justify-content: flex-end;
+        width: 100%;
+        margin-top: 30px;
+        padding-right: 16px;
+
+        a {
+            margin-right: 10px;
+            color: $header-text-color;
+            font-size: larger;
+            border-bottom: solid $landing-text-borders;
+            border-bottom-width: 4px;
+        }
+
+        a.profissional {
+            background-color: $landing-text-borders;
+            color: $landing-titles;
+            border-radius: 15px;
+            display: block;
+            width: 115px;
+            text-align: center;
+            transform: translateY(-12px);
+        }
+
+        a:visited, a:hover, a:active {
+            text-decoration: none;
+        }
+
+        a:hover {
+            opacity: 0.5;
+            transition: 1s;
+        }
+    }
 }
 
 div.landing-navbar {
@@ -26,6 +71,22 @@ div.landing-main-container {
     width: 110%;
     left: -5%;
     position: relative;
+
+    div.texto-destaque {
+        color: $landing-titles;
+        position: absolute;
+        z-index: 20;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.imagens {
+        top: 50%;
+        justify-content: space-evenly;
+    }
 }
 
 div.landing-thumbnail {
@@ -149,7 +210,7 @@ div.vantagens {
     div.conteudo-vantagens {
         position: absolute;
         width: 80%;
-        top: 100px;
+        top: 25%;
         left: 11%;
         height: 500px;
 
@@ -193,7 +254,7 @@ div.quero-trabalhar {
 
 div.quero-trabalhar-conteudo {
     position: absolute;
-    width: 80%;
+    width: 1120px;
     height: 60%;
     color: $landing-titles;
 
@@ -269,7 +330,7 @@ div.fale-conosco {
 
 div.fale-conosco-conteudo {
     position: absolute;
-    width: 80%;
+    width: 1200px;
     height: 80%;
     top: 140px;
 
@@ -361,7 +422,7 @@ div.lojas-parceiras {
 
 div.lojas-parceiras-content {
     position: absolute;
-    width: 80%;
+    width: 1130px;
     height: 100%;
 
     div.row {
@@ -429,12 +490,32 @@ div.duvidas {
     }
 
     div.direita p:before {
-        content: url('../../../assets/envelope.svg');
+        content: url("../../../assets/envelope.svg");
         margin-right: 10px;
     }
 
     div.esquerda p:before {
-        content: url('../../../assets/whatsapp.svg');
+        content: url("../../../assets/whatsapp.svg");
         margin-right: 10px;
+    }
+}
+
+@media (min-width: 1768px) {
+    div.landing-body {
+        height: 4870px;
+    }
+
+    div.vantagens {
+        height: 750px;
+    }
+}
+
+@media (min-width: 1948px) {
+    div.landing-body {
+        height: 4921px;
+    }
+
+    div.vantagens {
+        height: 800px;
     }
 }
