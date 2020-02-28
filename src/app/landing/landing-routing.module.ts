@@ -1,6 +1,10 @@
 import { Routes } from '@angular/router';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { PoliticaPrivacidadeComponent } from './politica-privacidade/politica-privacidade.component';
+import { TermosServicoComponent } from './termos-servico/termos-servico.component';
 
 export const landingRoutes: Routes = [
-  { path: 'landing', component: LandingPageComponent }
+  { path: '', component: LandingPageComponent },
+  { path: 'privacidade', component: PoliticaPrivacidadeComponent },
+  { path: 'termos', component: TermosServicoComponent }
 ];
