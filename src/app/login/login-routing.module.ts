@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { LoginScreenComponent } from './login-screen/login-screen.component';
 
 export const loginRoutes: Routes = [
-  { path: '', component: LoginScreenComponent }
+  { path: 'login', component: LoginScreenComponent }
 ];
 
 @NgModule({
