@@ -4,7 +4,12 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:3000'
+  apiUrl: 'http://192.168.1.4:3000',
+  moipUrl: 'https://connect-sandbox.moip.com.br',
+  moip_client_id: 'APP-3ZE5RL6VF6OA',
+  moip_client_secret: '5a384a3f54c7401e969bc1c9a81360bf',
+  moip_redirect_uri: 'http://192.168.1.4:4200/redirect',
+  moip_bearer_token: 'Bearer 4051205e2b5643ac860863f0433701dd_v2'
 };
 
 /*

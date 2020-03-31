@@ -1,1 +1,28 @@
-<a [href]="url">Link</a>
+<div class="container">
+  <h1 *ngIf="isLoading">Aguarde...</h1>
+  <div *ngIf="success">
+    <h1>Sucesso!</h1>
+    <h2>
+      Agora você pode atender os pedidos do Finddo :)
+    </h2>
+    <h2>
+      Basta fechar essa aba, efetuar logout no aplicativo
+    </h2>
+    <h2>
+      e fazer login novamente.
+    </h2>
+  </div>
+  <div *ngIf="fail">
+    <h1>Ops!</h1>
+    <h2>
+      Houve algum problema em confirmar suas permissões.
+    </h2>
+    <h2>
+      Tente novamente em alguns instantes e caso o problema persista
+    </h2>
+    <h2>
+      entre em contato com o suporte do Finddo na seção ajuda
+    </h2>
+    <h2>do seu aplicativo.</h2>
+  </div>
+</div>
