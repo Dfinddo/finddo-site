@@ -39,6 +39,7 @@
                   "with": "src/environments/environment.desenvolvimento.ts"
                 }
               ],
+              "baseHref": "/finddo-front-adm/",
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
