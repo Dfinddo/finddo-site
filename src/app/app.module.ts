@@ -12,6 +12,7 @@ import { ComponentsModule } from './components/components.module';
 import { environment } from 'src/environments/environment';
 import { SubcategoriesModule } from './subcategories/subcategories.module';
 import { LandingModule } from './landing/landing.module';
+import { ResetPasswordModule } from './reset-password/reset-password.module';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { LandingModule } from './landing/landing.module';
     ComponentsModule,
     LandingModule,
     LoginModule,
+    ResetPasswordModule,
     SubcategoriesModule
   ],
   providers: [AngularTokenModule],
