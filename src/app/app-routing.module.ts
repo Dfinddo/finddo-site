@@ -8,10 +8,12 @@ import { NavigationBarComponent } from './components/navigation-bar/navigation-b
 import { AuthGuardService } from 'src/services/auth-guard.service';
 import { subcategoriesRoutes } from './subcategories/subcategories-routing.module';
 import { landingRoutes } from './landing/landing-routing.module';
+import { resetPasswordRoutes } from './reset-password/reset-password-routing.module';
 
 const routes: Routes = [
   ...landingRoutes,
   ...loginRoutes,
+  ...resetPasswordRoutes,
   {
     path: 'console',
     component: NavigationBarComponent,
