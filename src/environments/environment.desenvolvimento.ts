@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://finddo-back-dev.herokuapp.com',
+  apiUrl: 'https://finddo-back-desenvolvimento.herokuapp.com',
   moipUrl: 'https://connect-sandbox.moip.com.br',
   moip_client_id: 'APP-3YFUT9M9DULJ',
   moip_client_secret: 'de91ceee0cff402fa712dcb8b6d76ac7',
