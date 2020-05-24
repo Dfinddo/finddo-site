@@ -2,8 +2,8 @@ export const environment = {
   production: true,
   apiUrl: 'https://finddo-back-desenvolvimento.herokuapp.com',
   moipUrl: 'https://connect-sandbox.moip.com.br',
-  moip_client_id: 'APP-3YFUT9M9DULJ',
-  moip_client_secret: 'de91ceee0cff402fa712dcb8b6d76ac7',
-  moip_redirect_uri: 'https://perrut.github.io/finddo-front-adm/redirect',
-  moip_bearer_token: 'Bearer ed48a145a2a94bc3b5ecdf657eaf3554_v2'
+  moip_client_id: 'APP-L19C3C1HX0RG',
+  moip_client_secret: '128e92420ed54ae8b2f0b63984b8a8b8',
+  moip_redirect_uri: 'https://finddo-landing-dev.herokuapp.com/redirect',
+  moip_bearer_token: 'Bearer 54def05c45b94a14ab78b18329eae59b_v2'
 };
