@@ -2,29 +2,33 @@
   <div class="landing-header-container">
     <img src="assets/Logo.png" />
     <ul>
-      <li><a href="#">Como Funciona?</a></li>
-      <li><a href="#">Vantagens</a></li>
-      <li><a href="#">Serviços</a></li>
-      <li><a href="#">Parceiros</a></li>
-      <li><a href="#">Contato</a></li>
-      <li><a class="profissional" href="#">Profissional Finddo</a></li>
+      <li><a href="#comofunciona">Como Funciona?</a></li>
+      <li><a href="#vantagens">Vantagens</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#parceiros">Parceiros</a></li>
+      <li><a href="#contato">Contato</a></li>
+      <li><a class="profissional" href="#profissional">Profissional Finddo</a></li>
     </ul>
     <div class="landing-navbar">
     </div>
   </div>
   <div class="landing-main-container">
     <div class="texto-destaque">
-      <h1>Manutenção Residencial nunca foi tão fácil</h1>
+      <h1>Manutenção Residencial nunca foi tão <span class="destaque">fácil</span></h1>
     </div>
     <div class="texto-destaque imagens">
-      <img src="assets/google-play.png" />
-      <img src="assets/app-store.png" />
+      <a href="https://play.google.com/store/apps/details?id=com.finddo" target="_blank">
+        <img src="assets/google-play.png" />
+      </a>
+      <a href="https://apps.apple.com/br/app/finddo/id1511168630" target="_blank">
+        <img src="assets/app-store.png" />
+      </a>
     </div>
     <div class="landing-thumbnail">
-      <img src="assets/background-destaque.png" />
+      <div class="landing-thumbnail-transparency"></div>
     </div>
   </div>
-  <div class="como-funciona">
+  <div id="comofunciona" class="como-funciona">
     <div class="row">
       <div class="col-12 centralize-title">
         <h3>Como funciona?</h3>
@@ -45,34 +49,34 @@
         <div class="step-number">
           <p>2</p>
         </div>
-        <img class="icone-como-funciona" src="assets/callendar.svg" />
+        <img class="icone-como-funciona" src="assets/worker.png" />
         <img class="background-como-funciona" src="assets/background-etapa-2.svg" />
         <div class="descricao-como-funciona">
-          <p>Escolha data e horário e receba um de nossos incríveis profissionais</p>
+          <p>Um de nossos profissionais parceiros irá atender na data e horário marcados</p>
         </div>
       </div>
       <div class="col-4 como-funciona-step-img">
         <div class="step-number">
           <p>3</p>
         </div>
-        <img class="icone-como-funciona" src="assets/invoice.svg" />
+        <img class="icone-como-funciona" src="assets/store.png" />
         <img class="background-como-funciona" src="assets/background-etapa-3.svg" />
         <div class="descricao-como-funciona">
-          <p>Após conclusão do serviço pague pelo app e receba sua nota fiscal</p>
+          <p>EM BREVE! Compre os produtos necessários para seu serviço sem sair de casa</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="vantagens">
+  <div id="vantagens" class="vantagens">
     <div class="vantagens-title">
       <h3>Vantagens</h3>
     </div>
     <div class="row conteudo-vantagens">
       <div class="col-3">
-        <img class="tela-exemplo-vantagens" src="assets/Tela-app-demo.svg" />
+        <img class="tela-exemplo-vantagens" src="assets/tela-1.png" />
       </div>
       <div class="col-3">
-        <img class="tela-exemplo-vantagens" src="assets/Tela-app-demo.svg" />
+        <img class="tela-exemplo-vantagens" src="assets/tela-2.png" />
       </div>
       <div class="col-6">
         <h4>Esqueça textões e ligações intermináveis</h4>
@@ -90,7 +94,7 @@
     </div>
     <img class="vantagens-background" src="assets/ellipse-destaque.svg" />
   </div>
-  <div class="servicos">
+  <div id="servicos" class="servicos">
     <div class="row servicos-title">
       <div class="col-12 centralize-title">
         <h3>Nossos Serviços</h3>
@@ -115,45 +119,32 @@
         <img src="assets/peq-reformas.png" />
       </div>
       <div class="col-4">
-        <img src="assets/ultimo.png" />
+        <div class="descricao-ultimo-servico">
+          <img src="assets/background-destaque.png" />
+          <p>Manutenções em geral</p>
+        </div>
       </div>
     </div>
   </div>
-  <div class="lojas-parceiras">
+  <div id="parceiros" class="lojas-parceiras">
     <div class="lojas-parceiras-content">
       <div class="lojas-parceiras-title">
         <h3>Lojas Parceiras</h3>
       </div>
       <div class="row">
+        <div class="col-4 parceiro-logo"></div>
         <div class="col-4 parceiro-logo">
-          <img src="assets/parceiro-placeholder.svg" />
-          <span></span>
+          <img src="assets/trecos-e-pregos.png" />
           <p>
-            Caros amigos, o entendimento das metas propostas maximiza as possibilidades por conta do processo de
-            comunicação como um todo.
+            Estamos animados para fazer parte dessa transformação tecnológica
           </p>
         </div>
-        <div class="col-4 parceiro-logo">
-          <img src="assets/parceiro-placeholder.svg" />
-          <span></span>
-          <p>
-            Caros amigos, o entendimento das metas propostas maximiza as possibilidades por conta do processo de
-            comunicação como um todo.
-          </p>
-        </div>
-        <div class="col-4 parceiro-logo">
-          <img src="assets/parceiro-placeholder.svg" />
-          <span></span>
-          <p>
-            Caros amigos, o entendimento das metas propostas maximiza as possibilidades por conta do processo de
-            comunicação como um todo.
-          </p>
-        </div>
+        <div class="col-4 parceiro-logo"></div>
       </div>
     </div>
     <img src="assets/lojas-parceiras.svg" />
   </div>
-  <div class="quero-trabalhar">
+  <div id="profissional" class="quero-trabalhar">
     <div class="quero-trabalhar-conteudo">
       <div class="quero-trabalhar-title">
         <h3>Quero trabalhar com o Finddo</h3>
@@ -200,7 +191,7 @@
     </div>
     <img src="assets/quero-trabalhar-com-finddo.svg" />
   </div>
-  <div class="fale-conosco">
+  <div id="contato" class="fale-conosco">
     <div class="fale-conosco-conteudo">
       <div class="row fale-conosco-titulo">
         <div class="col-12">
@@ -248,7 +239,7 @@
         <p>daniel@finddo.com.br</p>
       </div>
       <div class="col-6 esquerda">
-        <p>(21) 97141-8037</p>
+        <p>(21) 96864-9388</p>
       </div>
     </div>
   </div>
