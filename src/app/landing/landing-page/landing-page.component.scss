@@ -84,6 +84,7 @@ div.landing-main-container {
 
         h1 {
             font-size: 3.5rem;
+            padding: 0 8vw;
 
             .destaque {
                 color: $landing-text-borders;
@@ -94,6 +95,7 @@ div.landing-main-container {
     div.imagens {
         top: 50%;
         justify-content: space-evenly;
+        flex-wrap: wrap;
     }
 }
 
@@ -146,8 +148,6 @@ div.como-funciona {
     }
 
     div.descricao-como-funciona {
-        position: absolute;
-        transform: translateY(240px);
         font-size: x-large;
         text-align: center;
         padding-left: 30px;
@@ -158,6 +158,7 @@ div.como-funciona {
 
 div.servicos {
     transform: translateY(200px);
+    background-color: $landing-background;
 
     div.servicos-title {
         margin-bottom: 20px;
@@ -209,13 +210,13 @@ div.step-number {
 }
 
 div.vantagens {
-    height: 561px;
+    height: auto;
     transform: translateY(120px);
+    background-color: white;
+    width: 100vw;
 
     div.vantagens-title {
-        position: absolute;
         width: 100vw;
-        top: 30px;
 
         h3 {
             border-bottom-color: $landing-text-borders;
@@ -225,19 +226,21 @@ div.vantagens {
     }
 
     div.conteudo-vantagens {
-        position: absolute;
-        width: 80%;
-        top: 25%;
-        left: 11%;
-        height: 500px;
+        margin-top: 60px;
 
         h4 {
             text-decoration: underline;
             margin-bottom: 27px;
         }
 
+        .fit {
+            height: fit-content;
+        }
+
         img.tela-exemplo-vantagens {
             height: 54%;
+            margin: 0 auto;
+            display: block;
         }
 
         ul.lista-vantagens-principal li {
@@ -290,6 +293,11 @@ div.quero-trabalhar-conteudo {
         }
     }
 
+    .grade-vantagens {
+        align-items: center;
+        justify-content: center;
+    }
+
     div.quero-trabalhar-thumb {
         margin-top: 90px;
 
@@ -304,11 +312,12 @@ div.quero-trabalhar-conteudo {
     }
 
     div.form-quero-trabalhar {
-        margin-top: 20px;
-        background-color: $landing-background;
+        margin: 0 auto;
         height: 80px;
         border-radius: 44px;
         align-items: center;
+        display: block;
+        width: 80vw;
 
         input, a {
             width: 100%;
@@ -342,12 +351,12 @@ div.quero-trabalhar-conteudo {
 }
 
 div.fale-conosco {
-    transform: translate(-2px, -33px);
+    transform: translate(-2px, 200px);
 }
 
 div.fale-conosco-conteudo {
     position: absolute;
-    width: 1200px;
+    width: 100vw;
     height: 80%;
     top: 140px;
 
@@ -381,25 +390,12 @@ div.fale-conosco-conteudo {
         border-radius: 23px;
         border: transparent;
         font-size: larger;
-    }
-
-    textarea {
         display: block;
         margin: 0 auto;
     }
 
-    div.alinhar-direita {
-        input {
-            display: block;
-            margin-left: auto;
-        }
-    }
-
-    div.alinhar-esquerda {
-        input {
-            display: block;
-            margin-right: auto;
-        }
+    input {
+        max-width: 500px;
     }
 
     a {
@@ -490,7 +486,7 @@ div.parceiro-logo {
 }
 
 div.duvidas {
-    transform: translateY(-10px);
+    transform: translateY(235px);
     font-size: 23px;
     color: $landing-titles;
 
@@ -539,7 +535,7 @@ div.duvidas {
 
 @media (min-width: 1768px) {
     div.landing-body {
-        height: 4870px;
+        height: 5000px;
     }
 
     div.vantagens {
@@ -549,10 +545,20 @@ div.duvidas {
 
 @media (min-width: 1948px) {
     div.landing-body {
-        height: 4921px;
+        height: 5000px;
     }
 
     div.vantagens {
         height: 800px;
+    }
+}
+
+.pad-left-30 {
+    padding-left: 30px;
+}
+
+@media (max-width: 930px) {
+    .menu-it {
+        display: none;
     }
 }
